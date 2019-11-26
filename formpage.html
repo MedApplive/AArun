@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Arun Accounts|Contact</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="form.css" >
+        <link rel="stylesheet" href="index.css" >
+        <script src="form.js"></script>
+    </head>
+
+    <body >
+
+      <!-- Navigation -->
+
+<div id="navbar">
+  <a href="/index.html">Home</a>
+  <a href="/services.html">Services</a>
+  <a class="active" href="/formpage.html">Contact</a>
+</div>
+
+
+        <div class="container">
+            <div class="container-box rotated">
+                <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">Contact Us</button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">
+                                Contact Us
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form" >
+                                <p> Send your message in the form below and we will get back to you as early as possible. </p>
+                                <div class="form-group">
+                                    <label for="name"> Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"> Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name"> Message:</label>
+                                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- Map -->
+
+<container class="container-map">
+<h1 class="tno">Find us</h1>
+<p>Click to expand map</p>
+<!-- Map  -->
+<iframe style="container-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5043.467247492546!2d-0.6744288386133934!3d50.799045035713746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c535549abcd9d05!2sPeter%20Baldwin%20%26%20Co!5e0!3m2!1sen!2suk!4v1573482869693!5m2!1sen!2suk" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</container>
+
+   <!-- - footer -->
+
+  <footer class="#">
+  <img class="acca" src="img/acca.gif" alt="ACCA">
+  <p>AAccountancy Ltd © 2019<br>
+  AAccountancy Ltd.,
+  Unit j1, Durban Road, Bognor-Regis, West Sussex, PO22 9QT</p>
+  <p>Web design: MedAppLive. medapplive@live.co.uk</p>
+  </footer>
+
+</html>

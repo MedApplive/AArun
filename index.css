@@ -1,0 +1,348 @@
+/* CSS variables  */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --arun: #f30c13;
+  --arun-shadow: 2px 2px #dede16;
+  --arun-comp1: #1616de;
+ 
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvitica, sans-serif;
+  color: var(--dark);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body {
+  background-color: #ccc;
+ 
+  line-height: 1;
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  margin-top: 1.3em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+
+
+/* Sticky navbar */
+#navbar {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#navbar a {
+  background: var(--primary);
+  /* display: block; */
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--arun-comp1);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+#navbar a:hover {
+  background-color: var(--primary);
+  color: var(--arun);
+}
+
+#navbar a.active {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.content {
+  padding: 8px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: auto;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Top Container */
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase showcase'
+    'showcase showcase showcase';
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(img/accounting.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--arun);
+  text-shadow: var(--arun-shadow);
+}
+
+.showcase span {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: var(--arun-comp1);
+  text-shadow: var(--arun-shadow);
+}
+
+/* svc showcase top*/
+
+.svcshowcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(img/accounting.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.svcshowcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--arun);
+  text-shadow: var(--arun-shadow);
+}
+
+.svcshowcase span {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--arun-comp1);
+  text-shadow: var(--arun-shadow);
+}
+
+/* Text box on bg-image */
+
+.bg-color {
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: rgb(248, 242, 242);
+}
+
+p {
+  padding: 1rem;
+}
+
+h5 {
+  background-color: #ccc;
+}
+
+
+/* Service showcase bottom */
+
+
+
+.bsvcshowcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(img/accounting.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.bsvcshowcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--arun);
+  text-shadow: var(--arun-shadow);
+}
+
+.bsvcshowcase span {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--arun-comp1);
+  text-shadow: var(--arun-shadow);
+}
+
+/* boxes */
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow)
+}
+/* Telephone number text style */
+.tno {
+  color: var(--arun);
+  text-shadow: var(--arun-shadow);
+}
+
+/* Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+.account_details h5 {
+  grid-template-columns: 1fr;
+  color: var(--arun-comp1);
+}
+
+.location {
+  grid-template-columns: 1fr;
+}
+
+
+/* footer */
+footer {
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 10px;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+  /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* end of popup */
+
+
+/* media queries */
+@media(max-width:700px) {
+  .top-container {
+    grid-template-areas:
+    'showcase showcase';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+
+}
+
+@media(max-width: 360px) {
+  .top-container {
+    grid-template-areas:
+    'showcase';
+  }
+}
